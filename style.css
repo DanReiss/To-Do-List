@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: #1C6758;
+}
+
+button{
+    background-color: #EEF2E6;
+    color: #1C6758;
+    border: 2px solid #1C6758;
+    border-radius: 5px;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+button:hover{
+    background-color: #1C6758;
+    color: #EEF2E6;
+}
+
+button:hover > i{
+    color: #EEF2E6;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+input,select {
+    padding: 0.25rem 0.5rem;
+}
+
+/*------------- */
+
+.hide{
+    display: none;
+}
+
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #FDFDFD;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 2px solid #D6CDA4;
+}
+
+.todo-container header h1{
+   color: #3D8361
+}
+
+#todo-form , #edit-form{
+    padding: 1rem 0rem;
+    border-bottom: 2px solid #D6CDA4;
+}
+
+
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+    border-radius: 5px;
+    border: 3px solid #D6CDA4;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* -------------- */
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #D6CDA4;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h3{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
